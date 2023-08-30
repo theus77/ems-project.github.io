@@ -63,6 +63,16 @@ Replace `is_granted(contentType.createRole)` → `is_granted(contentType.roles.c
 
 ## version 4.x
 
+### Deprecated controller service ids
+* replace `emsch.controller.api::` by `EMS\\ClientHelperBundle\\Controller\\ApiController::` in your routes config
+* replace `emsch.controller.asset::` by `EMS\\ClientHelperBundle\\Controller\\AssetController::` in your routes config
+* replace `emsch.controller.user_api.document::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\DocumentController::` in your routes config
+* replace `emsch.controller.user_api.file::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\FileController::` in your routes config
+* replace `emsch.controller.user_api.login::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\LoginController::` in your routes config
+* replace `emsch.controller.user_api.profile::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\ProfileController::` in your routes config
+* replace `emsch.controller.user_api.test::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\TestController::` in your routes config
+* replace `emsch.controller.user_api.user::` by `EMS\\ClientHelperBundle\\Controller\\UserApi\\UserController::` in your routes config
+
 ### Deprecated twig functions
 * replace `{% spaceless %}` by `{% apply spaceless %}`
 * replace `{% endspaceless %}` by `{% endapply %}`
